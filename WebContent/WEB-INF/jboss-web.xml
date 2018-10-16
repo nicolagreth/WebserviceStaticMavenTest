@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<jboss-web>
+   <security-domain>java:jaas/portal</security-domain>
+   <context-root>/portal</context-root>
+   <replication-config>
+      <replication-trigger>SET</replication-trigger>
+   </replication-config>
+   <resource-ref>
+      <res-ref-name>jdbc/PortalDS</res-ref-name>
+      <jndi-name>java:PortalDS</jndi-name>
+   </resource-ref>
+</jboss-web>
